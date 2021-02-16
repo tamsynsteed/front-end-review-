@@ -12,17 +12,19 @@
   </head>
   <body>
     <!-- Preloader -->
-    <div class="preloader"></div>
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
     <!-- Navigation Section -->
     <nav class="navbar">
       <img src="..." alt="Logo" class="logo" />
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li class="nav-link"><a href="./index.html">Home</a></li>
-        <li class="nav-link"><a href="./blogs.html">Blogs</a></li>
         <li class="nav-link"><a href="#about">About</a></li>
+        <li class="nav-link"><a href="./blogs.html">Blogs</a></li>
         <li class="nav-link"><a href="./register.html">Register</a></li>
       </ul>
-      <button class="hamburger">Hamburger</button>
+      <button class="hamburger" onclick="toggleNav()">Hamburger</button>
     </nav>
     <!-- Landing Page Section -->
     <header class="landing">
@@ -48,5 +50,7 @@
       </div>
       <img src="https://picsum.photos/600?random=2" alt="Img" />
     </section>
+    <!-- Script Imports -->
+    <script src="./assets/scripts/navigation.js"></script>
   </body>
 </html>
